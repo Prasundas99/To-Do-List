@@ -1,2 +1,2 @@
 # To-Do-List
-This Repo is under development
+A todo app, with live weather update integration
