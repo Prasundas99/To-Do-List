@@ -1,5 +1,5 @@
 # To-Do-List
-A todo app, with live weather update integration
+A basic todo app, with live weather update integration.
 
 This App is still under Development
 
