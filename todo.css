@@ -1,190 +1,190 @@
-*{ padding: 0px;
+* {
+    padding: 0px;
     margin: 0px;
-    box-sizing: content-box;
-    font-family: 'Titillium Web', sans-serif;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
 }
 
-#full{
+#full {
     padding: 12px;
-    height: 640px;
+    height: 100vh;
     background-color: rgba(196, 201, 216, 0.733);
-    
+
 }
 
-#left-menu{
-    height: 630px;
+#left-menu {
+    height: 100%;
     width: 20%;
     background-color: whitesmoke;
     float: left;
-    border: 0.5px solid grey;
+    border: none;
 }
 
-#right-menu{
-   
-    width: 79%;
+#right-menu {
+    height: 100%;
+    width: 80%;
     background-color: white;
     float: left;
-    border: 0.5px solid grey;
-    
+    border: none;
+
 }
 
-.container{
-     
+.container {
+    width: 100%;
     background: rgb(233, 231, 231);
     box-shadow: 0 25px 50px -12px rgba(0, 183, 255, 0.2);
- }
- 
- 
- 
- #title{
-     text-align: center;
-     font-size: 21px;
-     width: 100%;
-     top: 12%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     position: absolute;
-     font-weight: 500;
- }
- 
- .header{
-     background-image: linear-gradient(rgba(0, 0, 0, 0.01),rgb(0,0,0,0.4)),url(https://source.unsplash.com/1600x900/?sky,cloud);
-     height: 200px;
-     background-position: center;
-     background-size: cover;
-     background-repeat: no-repeat;
-     border-bottom-left-radius: 0;
-     border-bottom-right-radius: 0;
-     padding: 28px;
-     border-bottom: 2px solid rgb(204, 204, 204);
-     position: relative;
- }
-
-
- .clear{
-     box-sizing: border-box;
-     padding: 0 10px;
-     font-size: 24px;
-     color: #fff;
-     height: 190px;
-     width: 100%;
-     text-align: right;
- }
-
- .weather-data{
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     margin: 1%;
-     padding: 0%;
-     font-weight: 400;
- }
-  
-
- #date{
-     
-     font-size: 21px;
-     color: #fff;
-     width: 100%;
-     font-weight: bold;
- }
- .content{
-    background: #fff;
-    min-height: 280px;
-    height: 100%;
+    padding: 10px;
 }
 
+#title {
+    text-align: center;
+    font-size: 21px;
+    width: 100%;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-weight: 500;
+}
 
-#list{
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgb(0, 0, 0, 0.4)), url(https://source.unsplash.com/1600x900/?sky,cloud);
+    height: 33%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 28px;
+    border-bottom: 2px solid rgb(204, 204, 204);
+    position: relative;
+}
+
+.clear {
+    box-sizing: border-box;
+    padding: 0 10px;
+    font-size: 24px;
+    color: #fff;
+    height: 190px;
+    width: 100%;
+    text-align: right;
+}
+
+.weather-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    padding: 0%;
+    font-weight: 400;
+}
+
+#date {
+    font-size: 21px;
+    color: #fff;
+    width: 100%;
+    font-weight: bold;
+}
+
+.content {
+    background: #fff;
+    min-height: 280px;
+    height: 67%;
+    position: relative;
+}
+
+#list {
     list-style-type: none;
-    height: 324px;
-    
+    height: 89%;
     overflow-y: scroll;
     border-bottom: 2px solid blue;
 }
 
-.item{
-    width: 95%;
+.item {
+    width: 97%;
     padding: 9px;
     background: rgb(255, 255, 255);
     box-sizing: border-box;
-    box-shadow: rgb(170, 168, 168) 1px 0px 0px 0.5px;
+    border-bottom: 1px solid #777;
 }
- 
- .fa{
-     cursor: pointer;
-     transition: .1s linear;
- }
- 
- .fa:hover{
-    transform: scale(1.2);
- }
- 
- .item .fa, .item p{
-     display: inline-block;
-     font-size: 21px;
- }
- 
- .item p{
-     font-size: 16px;
-     margin: 0 auto;
-     margin: 0 0 0 20px
- }
- 
- .de{
-     float: right;
-     margin-right: 10px;
- }
- 
- .co{
-     float: left;
- }
- 
- .add-item{
-     min-height: 40px;
-     height: 45px;
-     border-bottom-left-radius: 2px;
-     border-bottom-right-radius: 2px;
-     padding: 1px;
-     color:blue;
-     background:rgb(255, 255, 255);
- 
- }
- 
- .add-item .fa{
-     display: inline-block;
-     font-size: 34px;
-     margin-right: 10px;
-     margin-top: 4px;
- }
- 
- input[type=text] {
-     width: 89%;
-     box-sizing: border-box;
-     display: inline;
-     float: left;
-     border: none;
-     height: 40px;
-     font-size: 18px;
-     background:rgb(236, 235, 235);
-     padding: 12px;
-     margin-right: 15px;
- }
- 
- input[type=text]::placeholder{
-     color: blue;
- }
 
- .fa-check-circle{
-     color:green;
- }
- 
- .lineThrough{
-     text-decoration: line-through;
-     color: rgb(160, 168, 142);
-     background-color: rgb(207, 238, 221);
-     width: 80%;
-     height: 100%;
- }
- 
+.fa {
+    cursor: pointer;
+    transition: .1s linear;
+}
+
+.fa:hover {
+    transform: scale(1.2);
+}
+
+.item .fa,
+.item p {
+    display: inline-block;
+    font-size: 21px;
+}
+
+.item p {
+    font-size: 16px;
+    margin: 0 auto;
+    margin: 0 0 0 20px
+}
+
+.de {
+    float: right;
+    margin-right: 10px;
+}
+
+.co {
+    float: left;
+}
+
+.add-item {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    padding: 1px;
+    color: blue;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.add-item .fa {
+    display: inline-block;
+    font-size: 34px;
+    margin: 4px 10px;
+}
+
+input[type=text] {
+    width: 89%;
+    display: inline;
+    float: left;
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 18px;
+    background: rgb(236, 235, 235);
+    padding: 12px;
+    margin-right: 15px;
+}
+
+input[type=text]:focus {
+    border: 2px solid blue;
+}
+
+input[type=text]::placeholder {
+    color: blue;
+}
+
+.fa-check-circle {
+    color: green;
+}
+
+.lineThrough {
+    text-decoration: line-through;
+    color: rgb(160, 168, 142);
+    background-color: rgb(207, 238, 221);
+    width: 80%;
+    height: 100%;
+}

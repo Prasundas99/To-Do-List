@@ -67,7 +67,7 @@ window.addEventListener("load", () => {
 
   // add item to the list when the user enters enter
   document.addEventListener("keyup", function (event) {
-    if (event.keyCode == 13) {
+    if (event.key === 'Enter') {
       var toDo = input.value;
       if (toDo) {
         addTODO(toDo, id, false, false);
